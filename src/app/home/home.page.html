@@ -1,50 +1,54 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-          <!-- <ion-icon name="home"></ion-icon> -->
-          Home
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <!-- <ion-icon name="home"></ion-icon> -->
+            Home
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-row>
-  <ion-col size=6 >
-      <ion-card>
-        <ion-item color="primary">
-          <ion-icon name="cube" slot="start"></ion-icon>
-          <ion-card-content>Inventory</ion-card-content>
-        </ion-item>
-      </ion-card>
-    </ion-col>
-    <ion-col>
-      <ion-card>
-        <ion-item color="secondary">
-            <ion-icon name="people" slot="start"></ion-icon>
-            <ion-card-content>Employee</ion-card-content>
-          </ion-item>
-        </ion-card>
-      </ion-col>
+    <ion-row>
+        <ion-col col-md-6>
+            <ion-card>
+                <ion-item color="primary">
+                    <ion-icon name="cube" slot="start"></ion-icon>
+                    <ion-card-content>Inventory</ion-card-content>
+                    <ion-button slot="end" fill="outline" color="light" (click)="click()">OPEN</ion-button>
+                </ion-item>
+            </ion-card>
+        </ion-col>
+        <ion-col col-md-6>
+            <ion-card>
+                <ion-item color="secondary">
+                    <ion-icon name="people" slot="start"></ion-icon>
+                    <ion-card-content>Employee</ion-card-content>
+                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                </ion-item>
+            </ion-card>
+        </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size=6>
-        <ion-card>
-          <ion-item color="tertiary">
-            <ion-icon name="cart" slot="start"></ion-icon>
-            <ion-card-content>Purchase</ion-card-content>
-          </ion-item>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-item color="dark">
-              <ion-icon name="cart" slot="start"></ion-icon>
-              <ion-card-content>Sales</ion-card-content>
-          </ion-item>
-          </ion-card>
-    </ion-col>
-  </ion-row>    
+        <ion-col col-md-6>
+            <ion-card>
+                <ion-item color="tertiary">
+                    <ion-icon name="cart" slot="start"></ion-icon>
+                    <ion-card-content>Purchase</ion-card-content>
+                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                </ion-item>
+            </ion-card>
+        </ion-col>
+        <ion-col col-md-6>
+            <ion-card>
+                <ion-item color="dark">
+                    <ion-icon name="cart" slot="start"></ion-icon>
+                    <ion-card-content>Sales</ion-card-content>
+                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                </ion-item>
+            </ion-card>
+        </ion-col>
+    </ion-row>
 </ion-content>
