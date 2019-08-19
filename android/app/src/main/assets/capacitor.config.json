@@ -1,0 +1,7 @@
+{
+    "appId": "com.ionic.RajavirERP",
+    "appName": "RajavirERP",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "www"
+}

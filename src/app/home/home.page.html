@@ -17,7 +17,7 @@
                 <ion-item color="primary">
                     <ion-icon name="cube" slot="start"></ion-icon>
                     <ion-card-content>Inventory</ion-card-content>
-                    <ion-button slot="end" fill="outline" color="light" (click)="click()">OPEN</ion-button>
+                    <ion-button slot="end" fill="outline" color="light" [routerLink]="['/inventory']" routerLinkActive="router-link-active">OPEN</ion-button>
                 </ion-item>
             </ion-card>
         </ion-col>
@@ -26,7 +26,7 @@
                 <ion-item color="secondary">
                     <ion-icon name="people" slot="start"></ion-icon>
                     <ion-card-content>Employee</ion-card-content>
-                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                    <ion-button slot="end" fill="outline" color="light" [routerLink]="['/employee']" routerLinkActive="router-link-active">OPEN</ion-button>
                 </ion-item>
             </ion-card>
         </ion-col>
@@ -37,16 +37,16 @@
                 <ion-item color="tertiary">
                     <ion-icon name="cart" slot="start"></ion-icon>
                     <ion-card-content>Purchase</ion-card-content>
-                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                    <ion-button slot="end" fill="outline" color="light" [routerLink]="['/purchase']" routerLinkActive="router-link-active">OPEN</ion-button>
                 </ion-item>
             </ion-card>
         </ion-col>
         <ion-col col-md-6>
             <ion-card>
                 <ion-item color="dark">
-                    <ion-icon name="cart" slot="start"></ion-icon>
+                    <ion-icon name="card" slot="start"></ion-icon>
                     <ion-card-content>Sales</ion-card-content>
-                    <ion-button slot="end" fill="outline" color="light">OPEN</ion-button>
+                    <ion-button slot="end" fill="outline" color="light" [routerLink]="['/sales']" routerLinkActive="router-link-active">OPEN</ion-button>
                 </ion-item>
             </ion-card>
         </ion-col>
