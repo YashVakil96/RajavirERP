@@ -12,10 +12,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { DatabaseService } from "./database.service";
 
 import { IonicStorageModule } from "@ionic/storage";
-import { HttpModule } from "@angular/http";
+import { HttpClientModule } from "@angular/common/http";
 
-import { SQLitePorter } from "@ionic-native/sqlite-porter";
-import { SQLite } from "@ionic-native/sqlite";
+import { SQLitePorter } from "@ionic-native/sqlite-porter/ngx";
+import { SQLite } from "@ionic-native/sqlite/ngx";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +23,7 @@ import { SQLite } from "@ionic-native/sqlite";
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    HttpModule,
+    HttpClientModule,
     IonicStorageModule.forRoot(),
     AppRoutingModule
   ],

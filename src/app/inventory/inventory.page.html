@@ -10,5 +10,15 @@
 </ion-header>
 
 <ion-content>
-    <p>Inventory Content Goes Here</p>
+    <!-- <p>Inventory Content Goes Here</p> -->
+    <ion-item>
+        <ion-label stacked>What is your name:</ion-label>
+        <ion-input [([(ngModel)]="test.name" )]></ion-input>
+    </ion-item>
+    <button ion-button full (click)="addData()">Add Data</button>
+    <ion-list>
+        <ion-item *ngFor="let name of names">
+            <h2>{{ names.name }}</h2>
+        </ion-item>
+    </ion-list>
 </ion-content>
