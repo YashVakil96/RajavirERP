@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { DatabaseService } from "../database.service";
+// import { DatabaseService } from "../database.service";
 
 @Component({
   selector: "app-inventory",
@@ -7,25 +7,25 @@ import { DatabaseService } from "../database.service";
   styleUrls: ["./inventory.page.scss"]
 })
 export class InventoryPage implements OnInit {
-  names = [];
-  name = {};
-  constructor(private databaseservice: DatabaseService) {
-    this.databaseservice.getDatabaseState().subscribe(ready => {
-      if (ready) {
-        this.loadData();
-      }
-    });
-  }
-  loadData() {
-    this.databaseservice.getAllData().then(data => {
-      this.names = data;
-    });
-  }
-  addData() {
-    this.databaseservice.addData(this.names["name"]).then(data => {
-      this.loadData();
-    });
-    this.name = {};
-  }
+  //   names = [];
+  //   name = {};
+  //   constructor(private databaseservice: DatabaseService) {
+  //     this.databaseservice.getDatabaseState().subscribe(ready => {
+  //       if (ready) {
+  //         this.loadData();
+  //       }
+  //     });
+  //   }
+  //   loadData() {
+  //     this.databaseservice.getAllData().then(data => {
+  //       this.names = data;
+  //     });
+  //   }
+  //   addData() {
+  //     this.databaseservice.addData(this.names["name"]).then(data => {
+  //       this.loadData();
+  //     });
+  //     this.name = {};
+  //   }
   ngOnInit() {}
 }
